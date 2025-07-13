@@ -1,0 +1,20 @@
+backend:
+  name: github # ← GitHub OAuth を使う
+  repo: esnir74/hanataba-homepage # 例: rin-inc/company-site
+  branch: main # 省略可（デフォルト master）
+
+media_folder: "images/" # 画像アップ先（リポジトリ内のパス）
+public_folder: "/images/" # サイト側から参照する公開パス
+
+collections:
+  # ① 固定ページ（index.md）を1つだけ編集できるようにする例
+  - name: "pages" # 内部 ID
+    label: "固定ページ"
+    files:
+      - file: "content/index.md" # 後で作る Markdown
+        label: "ホーム"
+        name: "home"
+        fields:
+          - { label: "タイトル", name: "title", widget: "string" }
+          - { label: "本文", name: "body", widget: "markdown" }
+          - { label: "ヒーロー画像", name: "hero", widget: "image" }
