@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ハナタバプロジェクト - すべての人に輝きとリスペクトを</title>
+    <meta
+      name="description"
+      content="福祉事業所や個人クリエイターの才能を世界に届ける架け橋"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome 6 Free CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Dhv+M3pBmrDptBfWVMX5Qt3e9SJAJYf+sK/cy6pNuvZajCxVwQFDvXLuEVe8u3xYLDmBpbDGY9PxQIxGnfJxXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Progress Indicator -->
+    <div class="progress-indicator">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <!-- <a href="#" class="logo"></a> -->
+        <nav class="nav">
+          <ul class="nav-menu">
+            <li><a href="#hero">ホーム</a></li>
+            <li><a href="#mission">ミッション</a></li>
+            <li><a href="#creators">作り手</a></li>
+            <li><a href="#products">プロダクト</a></li>
+            <li><a href="#impact">インパクト</a></li>
+            <li><a href="#cta">参加する</a></li>
+          </ul>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-background"></div>
+
+      <div class="particles" id="particles"></div>
+
+      <div class="scroll-indicator">
+        <span>スクロール</span>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section mission">
+      <div class="container">
+        <h2 class="section-title fade-in">Our Mission</h2>
+        <div class="mission-content">
+          <div class="mission-text slide-left" data-delay="0">
+            <p class="fade-in" data-delay="200">
+              福祉事業所や個人クリエイターが持つ多様な個性や才能を束ね、その価値を正当に評価し、大衆に届ける架け橋として機能します。
+            </p>
+            <p class="fade-in" data-delay="400">
+              私たちは、埋もれている才能や技術を見つけ出し、専門的な技術や想いを一般の人にも分かりやすく伝え、作り手と受け手を結ぶ持続可能な関係を構築します。
+            </p>
+          </div>
+          <div class="mission-visual slide-right" data-delay="0">
+            <img src="images/mission.png" alt="Mission Visual" />
+
+            <div style="font-size: 4rem; color: var(--accent-warm)">🌸</div>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card stagger-item" data-delay="0">
+            <div class="progress-circle"></div>
+            <div class="stat-number count-up" data-target="50">0</div>
+            <div>協働クリエイター</div>
+          </div>
+          <div class="stat-card stagger-item" data-delay="200">
+            <div class="progress-circle"></div>
+            <div class="stat-number count-up" data-target="200">0</div>
+            <div>制作作品数</div>
+          </div>
+          <div class="stat-card stagger-item" data-delay="400">
+            <div class="progress-circle"></div>
+            <div class="stat-number count-up" data-target="85">0</div>
+            <div>満足度（%）</div>
+          </div>
+          <div class="stat-card stagger-item" data-delay="600">
+            <div class="progress-circle"></div>
+            <div class="stat-number count-up" data-target="15">0</div>
+            <div>提携事業所</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creators Section -->
+    <section id="creators" class="section creators">
+      <div class="container">
+        <h2 class="section-title fade-in">Creators</h2>
+        <div class="creators-carousel">
+          <div class="creators-track" id="creatorsTrack">
+            <div class="creator-card scale-in" data-delay="0">
+              <div class="creator-image">
+                <div class="shine-effect"></div>
+              </div>
+              <div class="creator-info">
+                <h3 class="creator-name fade-in" data-delay="300">田中 美咲</h3>
+                <p class="creator-description fade-in" data-delay="400">
+                  着物の端切れを使った美しいアクセサリーを制作。伝統的な技術を現代的にアレンジした作品が人気。
+                </p>
+              </div>
+            </div>
+            <div class="creator-card scale-in" data-delay="200">
+              <div class="creator-image">
+                <div class="shine-effect"></div>
+              </div>
+              <div class="creator-info">
+                <h3 class="creator-name fade-in" data-delay="300">佐藤 健太</h3>
+                <p class="creator-description fade-in" data-delay="400">
+                  木工技術を活かした温もりのある家具を制作。一つ一つ丁寧に作られた作品には作り手の愛情が込められています。
+                </p>
+              </div>
+            </div>
+            <div class="creator-card scale-in" data-delay="400">
+              <div class="creator-image">
+                <div class="shine-effect"></div>
+              </div>
+              <div class="creator-info">
+                <h3 class="creator-name fade-in" data-delay="300">山田 花子</h3>
+                <p class="creator-description fade-in" data-delay="400">
+                  刺繍の技術を使った繊細で美しい小物を制作。伝統的な技法を現代のライフスタイルに合わせてアレンジ。
+                </p>
+              </div>
+            </div>
+            <div class="creator-card scale-in" data-delay="600">
+              <div class="creator-image">
+                <div class="shine-effect"></div>
+              </div>
+              <div class="creator-info">
+                <h3 class="creator-name fade-in" data-delay="300">鈴木 太郎</h3>
+                <p class="creator-description fade-in" data-delay="400">
+                  陶芸の技術で日常に彩りを与える器を制作。土の温もりを感じられる作品が多くの人に愛されています。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn">‹</button>
+            <button class="carousel-btn">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+      <div class="container">
+        <h2 class="section-title fade-in">Products</h2>
+
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="accessories">
+            Accessories
+          </button>
+          <button class="filter-tab" data-filter="bags">Bags</button>
+          <button class="filter-tab" data-filter="ceramics">Ceramics</button>
+          <button class="filter-tab" data-filter="woodwork">Woodwork</button>
+          <button class="filter-tab" data-filter="textiles">Textiles</button>
+        </div>
+
+        <div class="products-grid">
+          <div
+            class="product-card morph"
+            data-delay="0"
+            data-category="accessories"
+          >
+            <div class="product-image">
+              <img src="images/product.png" alt="古布アクセサリー" />
+              <div class="shine-effect"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title fade-in" data-delay="100">
+                古布アクセサリー
+              </h3>
+              <div class="product-price fade-in" data-delay="200">¥3,500</div>
+              <p class="product-description fade-in" data-delay="300">
+                着物の美しい柄を活かしたハンドメイドアクセサリー
+              </p>
+            </div>
+          </div>
+          <div class="product-card morph" data-delay="100" data-category="bags">
+            <div class="product-image">
+              <img src="images/product.png" alt="古布アクセサリー" />
+              <div class="shine-effect"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title fade-in" data-delay="100">
+                手織りバッグ
+              </h3>
+              <div class="product-price fade-in" data-delay="200">¥8,500</div>
+              <p class="product-description fade-in" data-delay="300">
+                伝統的な手織り技術で作られた丈夫で美しいバッグ
+              </p>
+            </div>
+          </div>
+          <div
+            class="product-card morph"
+            data-delay="200"
+            data-category="ceramics"
+          >
+            <div class="product-image">
+              <img src="images/product.png" alt="古布アクセサリー" />
+              <div class="shine-effect"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title fade-in" data-delay="100">陶器セット</h3>
+              <div class="product-price fade-in" data-delay="200">¥12,000</div>
+              <p class="product-description fade-in" data-delay="300">
+                心を込めて作られた日常使いの陶器セット
+              </p>
+            </div>
+          </div>
+          <div
+            class="product-card morph"
+            data-delay="300"
+            data-category="woodwork"
+          >
+            <div class="product-image">
+              <img src="images/product.png" alt="古布アクセサリー" />
+              <div class="shine-effect"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title fade-in" data-delay="100">木工アート</h3>
+              <div class="product-price fade-in" data-delay="200">¥15,500</div>
+              <p class="product-description fade-in" data-delay="300">
+                自然の木材を使った温もりあふれるアート作品
+              </p>
+            </div>
+          </div>
+          <div
+            class="product-card morph"
+            data-delay="400"
+            data-category="textiles"
+          >
+            <div class="product-image">
+              <img src="images/product.png" alt="古布アクセサリー" />
+              <div class="shine-effect"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title fade-in" data-delay="100">刺繍小物</h3>
+              <div class="product-price fade-in" data-delay="200">¥2,800</div>
+              <p class="product-description fade-in" data-delay="300">
+                細やかな刺繍が美しい実用的な小物入れ
+              </p>
+            </div>
+          </div>
+          <div
+            class="product-card morph"
+            data-delay="500"
+            data-category="accessories"
+          >
+            <div class="product-image">
+              <img src="images/product.png" alt="古布アクセサリー" />
+              <div class="shine-effect"></div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title fade-in" data-delay="100">ガラス工芸</h3>
+              <div class="product-price fade-in" data-delay="200">¥6,200</div>
+              <p class="product-description fade-in" data-delay="300">
+                透明感が美しいハンドメイドガラス製品
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <!-- <section id="impact" class="section impact">
+      <div class="container">
+        <h2 class="section-title fade-in">Social Impact</h2>
+        <div class="impact-grid">
+          <div class="impact-item rotate-in" data-delay="0">
+            <div class="impact-icon">🌱</div>
+            <div class="impact-value count-up" data-target="1200">0</div>
+            <div class="impact-label">支援収入（万円）</div>
+          </div>
+          <div class="impact-item rotate-in" data-delay="200">
+            <div class="impact-icon">👥</div>
+            <div class="impact-value count-up" data-target="150">0</div>
+            <div class="impact-label">雇用創出（人）</div>
+          </div>
+          <div class="impact-item rotate-in" data-delay="400">
+            <div class="impact-icon">🏆</div>
+            <div class="impact-value count-up" data-target="25">0</div>
+            <div class="impact-label">受賞・掲載数</div>
+          </div>
+          <div class="impact-item rotate-in" data-delay="600">
+            <div class="impact-icon">♻️</div>
+            <div class="impact-value count-up" data-target="800">0</div>
+            <div class="impact-label">リサイクル素材（kg）</div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section id="cta" class="section cta-section">
+      <div class="container">
+        <h2 class="section-title fade-in">Join Us</h2>
+        <div class="cta-grid">
+          <div class="cta-card fade-in" data-delay="0">
+            <!-- <div class="cta-icon">join</div> -->
+            <h3 class="cta-title">クリエイター参加</h3>
+            <p class="cta-description">
+              あなたの技術と想いを世界に届けませんか。一緒に価値のある作品を作りましょう。
+            </p>
+          </div>
+          <div class="cta-card fade-in" data-delay="200">
+            <!-- <div class="cta-icon">buy</div> -->
+            <h3 class="cta-title">商品購入</h3>
+            <p class="cta-description">
+              作り手の想いが込められた商品を購入して、持続可能な社会づくりに参加しませんか。
+            </p>
+          </div>
+          <div class="cta-card fade-in" data-delay="400">
+            <!-- <div class="cta-icon">help</div> -->
+            <h3 class="cta-title">支援・協力</h3>
+            <p class="cta-description">
+              寄付や素材提供、ボランティアなど、様々な形でプロジェクトを支援できます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <!-- <div class="footer-section">
+            <h3>ハナタバプロジェクト</h3>
+            <p>
+              すべての人に輝きとリスペクトを。埋もれた才能を世界に届ける架け橋として、持続可能な社会の実現を目指します。
+            </p>
+          </div> -->
+          <div class="footer-section">
+            <h3>プロジェクト</h3>
+            <ul>
+              <li><a href="#mission">ミッション</a></li>
+              <li><a href="#creators">作り手紹介</a></li>
+              <li><a href="#products">商品一覧</a></li>
+              <li><a href="#impact">社会的インパクト</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>参加・支援</h3>
+            <ul>
+              <li><a href="#">クリエイター登録</a></li>
+              <li><a href="#">商品購入</a></li>
+              <li><a href="#">寄付・支援</a></li>
+              <li><a href="#">ボランティア</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>お問い合わせ</h3>
+            <ul>
+              <li><a href="#">運営会社</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+              <li><a href="#">利用規約</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>フォローする</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 HANATABA Project. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
